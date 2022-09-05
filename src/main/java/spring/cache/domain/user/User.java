@@ -4,8 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import spring.cache.domain.user.dto.UserRequestDto;
 
 import javax.persistence.*;
+import javax.transaction.Transactional;
 
 
 @Builder
@@ -25,4 +27,8 @@ public class User {
     @Column(name = "user_name", nullable = false)
     private String name;
 
+    public void update(UserRequestDto userRequestDto) {
+        this.id = userRequestDto.getId();
+        this.name = userRequestDto.getName();
+    }
 }
