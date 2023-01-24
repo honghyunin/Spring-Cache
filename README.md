@@ -12,3 +12,5 @@
 예를 들어 반복적인 조회를 지속적으로 해야하는 커머스와 유사한 도메인에 적합하다고 볼 수 있습니다.
 
 Spring boot 에서는 `org.springframework.boot:spring-boot-starter-cache` 를 통해 쉽게 cache를 구현할 수 있고 다른 서드파티 모듈(redis, encache)을 사용할 수 있도록 추상화를 지원하고 있습니다.
+
+> 자세한 설명은 [블로그](https://eojil-hyunin-in.tistory.com/entry/Spring-Spring-Cache)를 참고해주세요!
